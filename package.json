@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-360/scripts/packager.js",
-    "pre-bundle": "mkdir build/src/ && mkdir build/src/assets/ && cp -a src/assets/. build/src/assets/",
+    "postbundle": "mkdir build/src/ && mkdir build/src/assets/ && cp -a src/assets/. build/src/assets/",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
