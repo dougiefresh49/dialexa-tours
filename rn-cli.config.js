@@ -1,15 +1,7 @@
 'use strict';
 
 var path = require('path');
-var blacklist;
-
-try {
-  // >= 0.57
-  blacklist = require('metro-config/src/defaults/blacklist');
-} catch (e) {
-  // <= 0.56
-  blacklist = require('metro/src/blacklist');
-}
+var blacklist = require('metro/src/blacklist');
 
 var config = {
   getProjectRoots() {
